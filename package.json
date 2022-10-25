@@ -1,0 +1,30 @@
+{
+  "name": "sniper-framework",
+  "version": "0.0.0",
+  "description": "Sniper is a scope,event,system based framework",
+  "main": "server.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreyDevSergal/sniper.git"
+  },
+  "author": "GreyDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GreyDevSergal/sniper/issues"
+  },
+  "homepage": "https://github.com/GreyDevSergal/sniper#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.5",
+    "concurrently": "^7.5.0",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
